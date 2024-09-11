@@ -35,32 +35,11 @@ class Predator(Animal):
     def __init__(self, name):
         self.name = name
 
-    def eat(self, food):
-        if food.edible:
-            print(f'{self.name} съел {food.name}')
-            self.fed = True
-            self.alive = True
-        elif food.edible == False:
-            print(f'{self.name} не стал есть {food.name}')
-            self.fed = False
-            self.alive = False
 
 
 class Mammal(Animal):
     def __init__(self, name):
         self.name = name
-
-
-
-        # if food.edible == True:
-        #     print(f'{self.name} съел {food.name}')
-        #     self.fed = True
-        #     self.alive = True
-        # elif food.edible == False:
-        #     print(f'{self.name} не стал есть {food.name}')
-        #     self.fed = False
-        #     self.alive = False
-
 
 
 class Plant:
